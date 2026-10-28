@@ -4,6 +4,7 @@
 
 Tambien viene con un `Enum` donde podes agregar los roles que quieras y después en la configuración de seguridad poder elegir qué usuario puede entrar a un endpoint. ⚙️🔒
 
+Aclaración: use MySQL como base y en el .properties tengo las variables de entorno que use desde IntelliJ.
 ---
 
 ## 🛠️ Tecnologías utilizadas
