@@ -1,0 +1,690 @@
+2026-10-28T15:06:41.338-03:00  INFO 4772 --- [main] c.a.p.ProyectoSecurityApplication        : Starting ProyectoSecurityApplication using Java 26 with PID 4772 (C:\Users\Agus\Desktop\Proyectos\AuthService\target\classes started by Agus in C:\Users\Agus\Desktop\Proyectos\AuthService)
+2026-10-28T15:06:41.343-03:00 DEBUG 4772 --- [main] c.a.p.ProyectoSecurityApplication        : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-10-28T15:06:41.343-03:00  INFO 4772 --- [main] c.a.p.ProyectoSecurityApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-10-28T15:06:41.962-03:00  INFO 4772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-28T15:06:42.013-03:00  INFO 4772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2026-10-28T15:06:42.448-03:00  INFO 4772 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-28T15:06:42.459-03:00  INFO 4772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-28T15:06:42.459-03:00  INFO 4772 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-28T15:06:42.510-03:00  INFO 4772 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1127 ms
+2026-10-28T15:06:42.629-03:00  INFO 4772 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-28T15:06:42.690-03:00  INFO 4772 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-28T15:06:43.109-03:00  INFO 4772 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-28T15:06:43.142-03:00  INFO 4772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-28T15:06:43.551-03:00  INFO 4772 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@397a10df
+2026-10-28T15:06:43.553-03:00  INFO 4772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-28T15:06:43.647-03:00  INFO 4772 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/proyectAuth]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.7
+	Default catalog/schema: proyectAuth/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-28T15:06:44.886-03:00  INFO 4772 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-28T15:06:45.085-03:00  INFO 4772 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28T15:06:45.179-03:00  INFO 4772 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-28T15:06:45.395-03:00 DEBUG 4772 --- [main] c.a.p.security.jwt.AuthTokenFilter       : Filter 'authTokenFilter' configured for use
+2026-10-28T15:06:45.430-03:00  INFO 4772 --- [main] c.a.p.security.SecurityConfig            : SecurityConfig initialized
+2026-10-28T15:06:45.439-03:00 DEBUG 4772 --- [main] c.a.p.security.SecurityConfig            : Configuring AuthenticationManager
+2026-10-28T15:06:45.455-03:00 DEBUG 4772 --- [main] c.a.p.security.SecurityConfig            : Initializing BCrypt password encoder
+2026-10-28T15:06:45.464-03:00  INFO 4772 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceimpl
+2026-10-28T15:06:45.466-03:00  INFO 4772 --- [main] c.a.p.service.AuthService                : AuthService initialized
+2026-10-28T15:06:45.486-03:00 DEBUG 4772 --- [main] c.a.p.security.SecurityConfig            : Configuring CORS policy
+2026-10-28T15:06:45.496-03:00  INFO 4772 --- [main] c.a.p.security.SecurityConfig            : CORS configuration registered successfully
+2026-10-28T15:06:45.509-03:00  WARN 4772 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-28T15:06:45.668-03:00  INFO 4772 --- [main] c.a.p.security.SecurityConfig            : Configuring HTTP security filter chain
+2026-10-28T15:06:45.711-03:00  INFO 4772 --- [main] c.a.p.security.SecurityConfig            : HTTP security filter chain configured successfully
+2026-10-28T15:06:46.066-03:00  INFO 4772 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-10-28T15:06:46.071-03:00  INFO 4772 --- [main] c.a.p.ProyectoSecurityApplication        : Started ProyectoSecurityApplication in 5.193 seconds (process running for 5.607)
+2026-10-28T15:08:31.988-03:00  INFO 4772 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-28T15:08:31.988-03:00  INFO 4772 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-28T15:08:31.989-03:00  INFO 4772 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-28T15:08:32.000-03:00 DEBUG 4772 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/auth/login
+2026-10-28T15:08:32.000-03:00 DEBUG 4772 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/auth/login
+2026-10-28T15:08:32.000-03:00 DEBUG 4772 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/auth/login
+2026-10-28T15:08:32.001-03:00 DEBUG 4772 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/auth/login
+2026-10-28T15:08:32.075-03:00  INFO 4772 --- [http-nio-8080-exec-2] c.a.p.controller.AuthController          : Solicitud de login recibida
+2026-10-28T15:08:32.075-03:00 DEBUG 4772 --- [http-nio-8080-exec-2] c.a.p.service.AuthService                : Authentication attempt started
+2026-10-28T15:08:32.145-03:00 DEBUG 4772 --- [http-nio-8080-exec-2] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=agustinperez771@hotmail.com
+2026-10-28T15:08:32.153-03:00  WARN 4772 --- [http-nio-8080-exec-2] c.a.p.s.services.UserDetailsServiceimpl  : Authentication failed | reason=user not found
+2026-10-28T15:12:52.575-03:00  INFO 4772 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-28T15:12:52.579-03:00  INFO 4772 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-28T15:12:52.581-03:00  INFO 4772 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28T15:12:52.583-03:00  INFO 4772 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-28T15:12:52.587-03:00  INFO 4772 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-28T15:16:59.612-03:00  INFO 10452 --- [main] c.a.p.ProyectoSecurityApplication        : Starting ProyectoSecurityApplication using Java 26 with PID 10452 (C:\Users\Agus\Desktop\Proyectos\AuthService\target\classes started by Agus in C:\Users\Agus\Desktop\Proyectos\AuthService)
+2026-10-28T15:16:59.614-03:00 DEBUG 10452 --- [main] c.a.p.ProyectoSecurityApplication        : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-10-28T15:16:59.614-03:00  INFO 10452 --- [main] c.a.p.ProyectoSecurityApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-10-28T15:17:00.082-03:00  INFO 10452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-28T15:17:00.123-03:00  INFO 10452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+2026-10-28T15:17:00.495-03:00  INFO 10452 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-28T15:17:00.508-03:00  INFO 10452 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-28T15:17:00.508-03:00  INFO 10452 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-28T15:17:00.552-03:00  INFO 10452 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 902 ms
+2026-10-28T15:17:00.647-03:00  INFO 10452 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-28T15:17:00.686-03:00  INFO 10452 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-28T15:17:01.024-03:00  INFO 10452 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-28T15:17:01.048-03:00  INFO 10452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-28T15:17:01.275-03:00  INFO 10452 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c75e3bc
+2026-10-28T15:17:01.277-03:00  INFO 10452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-28T15:17:01.334-03:00  INFO 10452 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/proyectAuth]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.7
+	Default catalog/schema: proyectAuth/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-28T15:17:02.105-03:00  INFO 10452 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-28T15:17:02.168-03:00  INFO 10452 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28T15:17:02.208-03:00  INFO 10452 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-28T15:17:02.344-03:00 DEBUG 10452 --- [main] c.a.p.security.jwt.AuthTokenFilter       : Filter 'authTokenFilter' configured for use
+2026-10-28T15:17:02.366-03:00  INFO 10452 --- [main] c.a.p.security.SecurityConfig            : SecurityConfig initialized
+2026-10-28T15:17:02.372-03:00 DEBUG 10452 --- [main] c.a.p.security.SecurityConfig            : Configuring AuthenticationManager
+2026-10-28T15:17:02.381-03:00 DEBUG 10452 --- [main] c.a.p.security.SecurityConfig            : Initializing BCrypt password encoder
+2026-10-28T15:17:02.387-03:00  INFO 10452 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceimpl
+2026-10-28T15:17:02.389-03:00  INFO 10452 --- [main] c.a.p.service.AuthService                : AuthService initialized
+2026-10-28T15:17:02.405-03:00 DEBUG 10452 --- [main] c.a.p.security.SecurityConfig            : Configuring CORS policy
+2026-10-28T15:17:02.411-03:00  INFO 10452 --- [main] c.a.p.security.SecurityConfig            : CORS configuration registered successfully
+2026-10-28T15:17:02.421-03:00  WARN 10452 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-28T15:17:02.523-03:00  INFO 10452 --- [main] c.a.p.security.SecurityConfig            : Configuring HTTP security filter chain
+2026-10-28T15:17:02.551-03:00  INFO 10452 --- [main] c.a.p.security.SecurityConfig            : HTTP security filter chain configured successfully
+2026-10-28T15:17:02.782-03:00  INFO 10452 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-10-28T15:17:02.788-03:00  INFO 10452 --- [main] c.a.p.ProyectoSecurityApplication        : Started ProyectoSecurityApplication in 3.533 seconds (process running for 3.851)
+2026-10-28T15:17:06.629-03:00  INFO 10452 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-28T15:17:06.629-03:00  INFO 10452 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-28T15:17:06.630-03:00  INFO 10452 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-28T15:17:06.640-03:00 DEBUG 10452 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/auth/login
+2026-10-28T15:17:06.641-03:00 DEBUG 10452 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/auth/login
+2026-10-28T15:17:06.641-03:00 DEBUG 10452 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/auth/login
+2026-10-28T15:17:06.641-03:00 DEBUG 10452 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/auth/login
+2026-10-28T15:17:06.710-03:00  INFO 10452 --- [http-nio-8080-exec-2] c.a.p.controller.AuthController          : Solicitud de login recibida
+2026-10-28T15:17:06.710-03:00 DEBUG 10452 --- [http-nio-8080-exec-2] c.a.p.service.AuthService                : Authentication attempt started
+2026-10-28T15:17:06.773-03:00 DEBUG 10452 --- [http-nio-8080-exec-2] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=agustinperez771@hotmail.com
+2026-10-28T15:17:06.781-03:00  WARN 10452 --- [http-nio-8080-exec-2] c.a.p.s.services.UserDetailsServiceimpl  : Authentication failed | reason=user not found
+2026-10-28T15:18:15.650-03:00  INFO 10452 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-28T15:18:15.653-03:00  INFO 10452 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-28T15:18:15.656-03:00  INFO 10452 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28T15:18:15.657-03:00  INFO 10452 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-28T15:18:15.663-03:00  INFO 10452 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-28T15:18:32.832-03:00  INFO 17348 --- [main] c.a.p.ProyectoSecurityApplication        : Starting ProyectoSecurityApplication using Java 26 with PID 17348 (C:\Users\Agus\Desktop\Proyectos\AuthService\target\classes started by Agus in C:\Users\Agus\Desktop\Proyectos\AuthService)
+2026-10-28T15:18:32.834-03:00 DEBUG 17348 --- [main] c.a.p.ProyectoSecurityApplication        : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-10-28T15:18:32.835-03:00  INFO 17348 --- [main] c.a.p.ProyectoSecurityApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-10-28T15:18:33.301-03:00  INFO 17348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-28T15:18:33.345-03:00  INFO 17348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2026-10-28T15:18:33.739-03:00  INFO 17348 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-28T15:18:33.750-03:00  INFO 17348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-28T15:18:33.750-03:00  INFO 17348 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-28T15:18:33.797-03:00  INFO 17348 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 926 ms
+2026-10-28T15:18:33.897-03:00  INFO 17348 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-28T15:18:33.936-03:00  INFO 17348 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-28T15:18:34.275-03:00  INFO 17348 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-28T15:18:34.300-03:00  INFO 17348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-28T15:18:34.540-03:00  INFO 17348 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c75e3bc
+2026-10-28T15:18:34.541-03:00  INFO 17348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-28T15:18:34.599-03:00  INFO 17348 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/proyectAuth]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.7
+	Default catalog/schema: proyectAuth/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-28T15:18:35.379-03:00  INFO 17348 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-28T15:18:35.448-03:00  INFO 17348 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28T15:18:35.494-03:00  INFO 17348 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-28T15:18:35.649-03:00 DEBUG 17348 --- [main] c.a.p.security.jwt.AuthTokenFilter       : Filter 'authTokenFilter' configured for use
+2026-10-28T15:18:35.675-03:00  INFO 17348 --- [main] c.a.p.security.SecurityConfig            : SecurityConfig initialized
+2026-10-28T15:18:35.680-03:00 DEBUG 17348 --- [main] c.a.p.security.SecurityConfig            : Configuring AuthenticationManager
+2026-10-28T15:18:35.690-03:00 DEBUG 17348 --- [main] c.a.p.security.SecurityConfig            : Initializing BCrypt password encoder
+2026-10-28T15:18:35.696-03:00  INFO 17348 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceimpl
+2026-10-28T15:18:35.698-03:00  INFO 17348 --- [main] c.a.p.service.AuthService                : AuthService initialized
+2026-10-28T15:18:35.716-03:00 DEBUG 17348 --- [main] c.a.p.security.SecurityConfig            : Configuring CORS policy
+2026-10-28T15:18:35.722-03:00  INFO 17348 --- [main] c.a.p.security.SecurityConfig            : CORS configuration registered successfully
+2026-10-28T15:18:35.733-03:00  WARN 17348 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-28T15:18:35.840-03:00  INFO 17348 --- [main] c.a.p.security.SecurityConfig            : Configuring HTTP security filter chain
+2026-10-28T15:18:35.868-03:00  INFO 17348 --- [main] c.a.p.security.SecurityConfig            : HTTP security filter chain configured successfully
+2026-10-28T15:18:36.070-03:00  INFO 17348 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-10-28T15:18:36.074-03:00  INFO 17348 --- [main] c.a.p.ProyectoSecurityApplication        : Started ProyectoSecurityApplication in 3.601 seconds (process running for 3.932)
+2026-10-28T15:18:38.968-03:00  INFO 17348 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-28T15:18:38.968-03:00  INFO 17348 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-28T15:18:38.969-03:00  INFO 17348 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-28T15:18:38.979-03:00 DEBUG 17348 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/auth/login
+2026-10-28T15:18:38.979-03:00 DEBUG 17348 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/auth/login
+2026-10-28T15:18:38.979-03:00 DEBUG 17348 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/auth/login
+2026-10-28T15:18:38.979-03:00 DEBUG 17348 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/auth/login
+2026-10-28T15:18:39.046-03:00  INFO 17348 --- [http-nio-8080-exec-2] c.a.p.controller.AuthController          : Solicitud de login recibida
+2026-10-28T15:18:39.046-03:00 DEBUG 17348 --- [http-nio-8080-exec-2] c.a.p.service.AuthService                : Authentication attempt started
+2026-10-28T15:18:39.111-03:00 DEBUG 17348 --- [http-nio-8080-exec-2] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=agustinperez771@hotmail.com
+2026-10-28T15:18:39.117-03:00  WARN 17348 --- [http-nio-8080-exec-2] c.a.p.s.services.UserDetailsServiceimpl  : Authentication failed | reason=user not found
+2026-10-28T15:18:59.999-03:00 DEBUG 17348 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/auth/register
+2026-10-28T15:19:00.000-03:00 DEBUG 17348 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/auth/register
+2026-10-28T15:19:00.000-03:00 DEBUG 17348 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/auth/register
+2026-10-28T15:19:00.000-03:00 DEBUG 17348 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/auth/register
+2026-10-28T15:19:00.055-03:00  INFO 17348 --- [http-nio-8080-exec-4] c.a.p.controller.AuthController          : Solicitud de registro recibida
+2026-10-28T15:19:00.060-03:00 DEBUG 17348 --- [http-nio-8080-exec-4] c.a.p.service.AuthService                : User registration process started
+2026-10-28T15:19:00.164-03:00  INFO 17348 --- [http-nio-8080-exec-4] c.a.p.service.AuthService                : User registered successfully | email=2@hotmail.com
+2026-10-28T15:19:00.179-03:00  INFO 17348 --- [http-nio-8080-exec-4] c.a.p.controller.AuthController          : Usuario registrado correctamente
+2026-10-28T15:19:19.082-03:00 DEBUG 17348 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/auth/login
+2026-10-28T15:19:19.083-03:00 DEBUG 17348 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/auth/login
+2026-10-28T15:19:19.083-03:00 DEBUG 17348 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/auth/login
+2026-10-28T15:19:19.083-03:00 DEBUG 17348 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/auth/login
+2026-10-28T15:19:19.084-03:00  INFO 17348 --- [http-nio-8080-exec-3] c.a.p.controller.AuthController          : Solicitud de login recibida
+2026-10-28T15:19:19.084-03:00 DEBUG 17348 --- [http-nio-8080-exec-3] c.a.p.service.AuthService                : Authentication attempt started
+2026-10-28T15:19:19.084-03:00 DEBUG 17348 --- [http-nio-8080-exec-3] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=2@hotmail.com
+2026-10-28T15:19:19.091-03:00 DEBUG 17348 --- [http-nio-8080-exec-3] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=2@hotmail.com
+2026-10-28T15:19:19.151-03:00  INFO 17348 --- [http-nio-8080-exec-3] c.a.p.service.AuthService                : User authenticated successfully | email=2@hotmail.com
+2026-10-28T15:19:19.152-03:00 DEBUG 17348 --- [http-nio-8080-exec-3] c.a.p.security.jwt.JwtUtils              : Generating JWT token | username=2@hotmail.com
+2026-10-28T15:19:19.225-03:00 DEBUG 17348 --- [http-nio-8080-exec-3] c.a.p.service.AuthService                : JWT generated successfully for authenticated user
+2026-10-28T15:19:19.225-03:00  INFO 17348 --- [http-nio-8080-exec-3] c.a.p.controller.AuthController          : Login procesado correctamente
+2026-10-28T15:19:27.941-03:00  INFO 17348 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-28T15:19:27.946-03:00  INFO 17348 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-28T15:19:27.948-03:00  INFO 17348 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28T15:19:27.950-03:00  INFO 17348 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-28T15:19:27.953-03:00  INFO 17348 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-28T15:25:47.589-03:00  INFO 12128 --- [main] c.a.p.ProyectoSecurityApplication        : Starting ProyectoSecurityApplication using Java 26 with PID 12128 (C:\Users\Agus\Desktop\Proyectos\AuthService\target\classes started by Agus in C:\Users\Agus\Desktop\Proyectos\AuthService)
+2026-10-28T15:25:47.591-03:00 DEBUG 12128 --- [main] c.a.p.ProyectoSecurityApplication        : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-10-28T15:25:47.591-03:00  INFO 12128 --- [main] c.a.p.ProyectoSecurityApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-10-28T15:25:48.063-03:00  INFO 12128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-28T15:25:48.111-03:00  INFO 12128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2026-10-28T15:25:48.496-03:00  INFO 12128 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-28T15:25:48.507-03:00  INFO 12128 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-28T15:25:48.508-03:00  INFO 12128 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-28T15:25:48.553-03:00  INFO 12128 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 927 ms
+2026-10-28T15:25:48.655-03:00  INFO 12128 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-28T15:25:48.695-03:00  INFO 12128 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-28T15:25:49.035-03:00  INFO 12128 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-28T15:25:49.059-03:00  INFO 12128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-28T15:25:49.293-03:00  INFO 12128 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@397a10df
+2026-10-28T15:25:49.294-03:00  INFO 12128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-28T15:25:49.351-03:00  INFO 12128 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/proyectAuth]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.7
+	Default catalog/schema: proyectAuth/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-28T15:25:50.126-03:00  INFO 12128 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-28T15:25:50.193-03:00  INFO 12128 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28T15:25:50.237-03:00  INFO 12128 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-28T15:25:50.378-03:00 DEBUG 12128 --- [main] c.a.p.security.jwt.AuthTokenFilter       : Filter 'authTokenFilter' configured for use
+2026-10-28T15:25:50.404-03:00  INFO 12128 --- [main] c.a.p.security.SecurityConfig            : SecurityConfig initialized
+2026-10-28T15:25:50.409-03:00 DEBUG 12128 --- [main] c.a.p.security.SecurityConfig            : Configuring AuthenticationManager
+2026-10-28T15:25:50.420-03:00 DEBUG 12128 --- [main] c.a.p.security.SecurityConfig            : Initializing BCrypt password encoder
+2026-10-28T15:25:50.426-03:00  INFO 12128 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceimpl
+2026-10-28T15:25:50.428-03:00  INFO 12128 --- [main] c.a.p.service.AuthService                : AuthService initialized
+2026-10-28T15:25:50.446-03:00 DEBUG 12128 --- [main] c.a.p.security.SecurityConfig            : Configuring CORS policy
+2026-10-28T15:25:50.454-03:00  INFO 12128 --- [main] c.a.p.security.SecurityConfig            : CORS configuration registered successfully
+2026-10-28T15:25:50.466-03:00  WARN 12128 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-28T15:25:50.578-03:00  INFO 12128 --- [main] c.a.p.security.SecurityConfig            : Configuring HTTP security filter chain
+2026-10-28T15:25:50.605-03:00  INFO 12128 --- [main] c.a.p.security.SecurityConfig            : HTTP security filter chain configured successfully
+2026-10-28T15:25:50.830-03:00  INFO 12128 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-10-28T15:25:50.834-03:00  INFO 12128 --- [main] c.a.p.ProyectoSecurityApplication        : Started ProyectoSecurityApplication in 3.611 seconds (process running for 3.942)
+2026-10-28T15:26:01.901-03:00  INFO 12128 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-28T15:26:01.901-03:00  INFO 12128 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-28T15:26:01.902-03:00  INFO 12128 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-10-28T15:26:01.912-03:00 DEBUG 12128 --- [http-nio-8080-exec-1] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/auth/register
+2026-10-28T15:26:01.912-03:00 DEBUG 12128 --- [http-nio-8080-exec-1] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/auth/register
+2026-10-28T15:26:01.912-03:00 DEBUG 12128 --- [http-nio-8080-exec-1] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/auth/register
+2026-10-28T15:26:01.912-03:00 DEBUG 12128 --- [http-nio-8080-exec-1] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/auth/register
+2026-10-28T15:26:02.013-03:00  INFO 12128 --- [http-nio-8080-exec-1] c.a.p.controller.AuthController          : Solicitud de registro recibida
+2026-10-28T15:26:02.018-03:00 DEBUG 12128 --- [http-nio-8080-exec-1] c.a.p.service.AuthService                : User registration process started
+2026-10-28T15:26:02.124-03:00  INFO 12128 --- [http-nio-8080-exec-1] c.a.p.service.AuthService                : User registered successfully | email=3@hotmail.com
+2026-10-28T15:26:02.136-03:00  INFO 12128 --- [http-nio-8080-exec-1] c.a.p.controller.AuthController          : Usuario registrado correctamente
+2026-10-28T15:26:09.515-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/auth/register
+2026-10-28T15:26:09.515-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/auth/register
+2026-10-28T15:26:09.515-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/auth/register
+2026-10-28T15:26:09.515-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/auth/register
+2026-10-28T15:26:09.517-03:00  INFO 12128 --- [http-nio-8080-exec-3] c.a.p.controller.AuthController          : Solicitud de registro recibida
+2026-10-28T15:26:09.517-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.service.AuthService                : User registration process started
+2026-10-28T15:26:09.519-03:00  WARN 12128 --- [http-nio-8080-exec-3] c.a.p.service.AuthService                : User registration rejected | reason=email already registered
+2026-10-28T15:26:09.523-03:00  WARN 12128 --- [http-nio-8080-exec-3] c.a.p.exception.GlobalExceptionHandler   : Illegal argument detected | status=400 | message=Ya existe una cuenta registrada con ese email
+2026-10-28T15:26:25.489-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/auth/login
+2026-10-28T15:26:25.489-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/auth/login
+2026-10-28T15:26:25.489-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/auth/login
+2026-10-28T15:26:25.489-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/auth/login
+2026-10-28T15:26:25.491-03:00  INFO 12128 --- [http-nio-8080-exec-5] c.a.p.controller.AuthController          : Solicitud de login recibida
+2026-10-28T15:26:25.491-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.service.AuthService                : Authentication attempt started
+2026-10-28T15:26:25.552-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=3@hotmail.com
+2026-10-28T15:26:25.564-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=3@hotmail.com
+2026-10-28T15:26:25.624-03:00  INFO 12128 --- [http-nio-8080-exec-5] c.a.p.service.AuthService                : User authenticated successfully | email=3@hotmail.com
+2026-10-28T15:26:25.624-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.JwtUtils              : Generating JWT token | username=3@hotmail.com
+2026-10-28T15:26:25.694-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.service.AuthService                : JWT generated successfully for authenticated user
+2026-10-28T15:26:25.694-03:00  INFO 12128 --- [http-nio-8080-exec-5] c.a.p.controller.AuthController          : Login procesado correctamente
+2026-10-28T15:26:34.872-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/auth/login/prueba
+2026-10-28T15:26:34.873-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/auth/login/prueba
+2026-10-28T15:26:34.873-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/auth/login/prueba
+2026-10-28T15:26:34.873-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/auth/login/prueba
+2026-10-28T15:26:40.768-03:00 DEBUG 12128 --- [http-nio-8080-exec-7] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/auth/login/prueba/admin
+2026-10-28T15:26:40.768-03:00 DEBUG 12128 --- [http-nio-8080-exec-7] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/auth/login/prueba/admin
+2026-10-28T15:26:40.769-03:00 DEBUG 12128 --- [http-nio-8080-exec-7] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/auth/login/prueba/admin
+2026-10-28T15:26:40.769-03:00 DEBUG 12128 --- [http-nio-8080-exec-7] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/auth/login/prueba/admin
+2026-10-28T15:27:07.247-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/prueba
+2026-10-28T15:27:07.247-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/prueba
+2026-10-28T15:27:07.247-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/prueba
+2026-10-28T15:27:07.247-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/prueba
+2026-10-28T15:27:12.167-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/prueba/admin
+2026-10-28T15:27:12.168-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/prueba/admin
+2026-10-28T15:27:12.168-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/prueba/admin
+2026-10-28T15:27:12.168-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/prueba/admin
+2026-10-28T15:27:36.047-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/prueba
+2026-10-28T15:27:36.048-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/prueba
+2026-10-28T15:27:36.048-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/prueba
+2026-10-28T15:27:36.048-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/prueba
+2026-10-28T15:27:43.597-03:00 DEBUG 12128 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/prueba/admin
+2026-10-28T15:27:43.597-03:00 DEBUG 12128 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/prueba/admin
+2026-10-28T15:27:43.597-03:00 DEBUG 12128 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/prueba/admin
+2026-10-28T15:27:43.597-03:00 DEBUG 12128 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/prueba/admin
+2026-10-28T15:27:45.732-03:00 DEBUG 12128 --- [http-nio-8080-exec-1] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/prueba/admin
+2026-10-28T15:27:45.732-03:00 DEBUG 12128 --- [http-nio-8080-exec-1] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/prueba/admin
+2026-10-28T15:27:45.732-03:00 DEBUG 12128 --- [http-nio-8080-exec-1] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/prueba/admin
+2026-10-28T15:27:45.732-03:00 DEBUG 12128 --- [http-nio-8080-exec-1] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/prueba/admin
+2026-10-28T15:28:01.643-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/auth/login
+2026-10-28T15:28:01.643-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/auth/login
+2026-10-28T15:28:01.643-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/auth/login
+2026-10-28T15:28:01.643-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/auth/login
+2026-10-28T15:28:01.644-03:00  INFO 12128 --- [http-nio-8080-exec-3] c.a.p.controller.AuthController          : Solicitud de login recibida
+2026-10-28T15:28:01.644-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.service.AuthService                : Authentication attempt started
+2026-10-28T15:28:01.644-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=2@hotmail.com
+2026-10-28T15:28:01.647-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=2@hotmail.com
+2026-10-28T15:28:01.709-03:00  INFO 12128 --- [http-nio-8080-exec-3] c.a.p.service.AuthService                : User authenticated successfully | email=2@hotmail.com
+2026-10-28T15:28:01.709-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.security.jwt.JwtUtils              : Generating JWT token | username=2@hotmail.com
+2026-10-28T15:28:01.709-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.service.AuthService                : JWT generated successfully for authenticated user
+2026-10-28T15:28:01.709-03:00  INFO 12128 --- [http-nio-8080-exec-3] c.a.p.controller.AuthController          : Login procesado correctamente
+2026-10-28T15:28:17.162-03:00 DEBUG 12128 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/prueba
+2026-10-28T15:28:17.162-03:00 DEBUG 12128 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/prueba
+2026-10-28T15:28:17.162-03:00 DEBUG 12128 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/prueba
+2026-10-28T15:28:17.162-03:00 DEBUG 12128 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/prueba
+2026-10-28T15:28:28.111-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/prueba
+2026-10-28T15:28:28.111-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization con esquema Bearer detectado | uri=/prueba
+2026-10-28T15:28:28.111-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : Token JWT extraído correctamente | uri=/prueba
+2026-10-28T15:28:28.144-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.JwtUtils              : JWT token validated successfully
+2026-10-28T15:28:28.144-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : Resultado de validación JWT | valid=true | uri=/prueba
+2026-10-28T15:28:28.144-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.JwtUtils              : Extracting username from JWT token
+2026-10-28T15:28:28.144-03:00  INFO 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : JWT validado correctamente | username=2@hotmail.com | uri=/prueba
+2026-10-28T15:28:28.144-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=2@hotmail.com
+2026-10-28T15:28:28.148-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=2@hotmail.com
+2026-10-28T15:28:28.148-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : Usuario cargado | username=2@hotmail.com | authorities=[ROLE_ADMIN]
+2026-10-28T15:28:28.148-03:00  INFO 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : Autenticación establecida en SecurityContext | username=2@hotmail.com | authorities=[ROLE_ADMIN] | uri=/prueba
+2026-10-28T15:28:28.148-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/prueba
+2026-10-28T15:28:36.298-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=GET | uri=/prueba
+2026-10-28T15:28:36.298-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization con esquema Bearer detectado | uri=/prueba
+2026-10-28T15:28:36.298-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.security.jwt.AuthTokenFilter       : Token JWT extraído correctamente | uri=/prueba
+2026-10-28T15:28:36.299-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.security.jwt.JwtUtils              : JWT token validated successfully
+2026-10-28T15:28:36.299-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.security.jwt.AuthTokenFilter       : Resultado de validación JWT | valid=true | uri=/prueba
+2026-10-28T15:28:36.299-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.security.jwt.JwtUtils              : Extracting username from JWT token
+2026-10-28T15:28:36.299-03:00  INFO 12128 --- [http-nio-8080-exec-6] c.a.p.security.jwt.AuthTokenFilter       : JWT validado correctamente | username=2@hotmail.com | uri=/prueba
+2026-10-28T15:28:36.299-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=2@hotmail.com
+2026-10-28T15:28:36.303-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=2@hotmail.com
+2026-10-28T15:28:36.303-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.security.jwt.AuthTokenFilter       : Usuario cargado | username=2@hotmail.com | authorities=[ROLE_ADMIN]
+2026-10-28T15:28:36.303-03:00  INFO 12128 --- [http-nio-8080-exec-6] c.a.p.security.jwt.AuthTokenFilter       : Autenticación establecida en SecurityContext | username=2@hotmail.com | authorities=[ROLE_ADMIN] | uri=/prueba
+2026-10-28T15:28:36.303-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=GET | uri=/prueba
+2026-10-28T15:29:00.642-03:00 DEBUG 12128 --- [http-nio-8080-exec-7] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/auth/login
+2026-10-28T15:29:00.642-03:00 DEBUG 12128 --- [http-nio-8080-exec-7] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/auth/login
+2026-10-28T15:29:00.642-03:00 DEBUG 12128 --- [http-nio-8080-exec-7] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/auth/login
+2026-10-28T15:29:00.642-03:00 DEBUG 12128 --- [http-nio-8080-exec-7] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/auth/login
+2026-10-28T15:29:00.647-03:00  WARN 12128 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported]
+2026-10-28T15:29:09.075-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/auth/login
+2026-10-28T15:29:09.076-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/auth/login
+2026-10-28T15:29:09.076-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/auth/login
+2026-10-28T15:29:09.076-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/auth/login
+2026-10-28T15:29:09.077-03:00  INFO 12128 --- [http-nio-8080-exec-10] c.a.p.controller.AuthController          : Solicitud de login recibida
+2026-10-28T15:29:09.077-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.service.AuthService                : Authentication attempt started
+2026-10-28T15:29:09.077-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=2@hotmail.com
+2026-10-28T15:29:09.080-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=2@hotmail.com
+2026-10-28T15:29:09.139-03:00  INFO 12128 --- [http-nio-8080-exec-10] c.a.p.service.AuthService                : User authenticated successfully | email=2@hotmail.com
+2026-10-28T15:29:09.139-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.JwtUtils              : Generating JWT token | username=2@hotmail.com
+2026-10-28T15:29:09.140-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.service.AuthService                : JWT generated successfully for authenticated user
+2026-10-28T15:29:09.140-03:00  INFO 12128 --- [http-nio-8080-exec-10] c.a.p.controller.AuthController          : Login procesado correctamente
+2026-10-28T15:29:27.324-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=GET | uri=/prueba/admin
+2026-10-28T15:29:27.324-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization con esquema Bearer detectado | uri=/prueba/admin
+2026-10-28T15:29:27.324-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.AuthTokenFilter       : Token JWT extraído correctamente | uri=/prueba/admin
+2026-10-28T15:29:27.325-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.JwtUtils              : JWT token validated successfully
+2026-10-28T15:29:27.325-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.AuthTokenFilter       : Resultado de validación JWT | valid=true | uri=/prueba/admin
+2026-10-28T15:29:27.325-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.JwtUtils              : Extracting username from JWT token
+2026-10-28T15:29:27.325-03:00  INFO 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.AuthTokenFilter       : JWT validado correctamente | username=2@hotmail.com | uri=/prueba/admin
+2026-10-28T15:29:27.325-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=2@hotmail.com
+2026-10-28T15:29:27.329-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=2@hotmail.com
+2026-10-28T15:29:27.329-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.AuthTokenFilter       : Usuario cargado | username=2@hotmail.com | authorities=[ROLE_ADMIN]
+2026-10-28T15:29:27.330-03:00  INFO 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.AuthTokenFilter       : Autenticación establecida en SecurityContext | username=2@hotmail.com | authorities=[ROLE_ADMIN] | uri=/prueba/admin
+2026-10-28T15:29:27.330-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=GET | uri=/prueba/admin
+2026-10-28T15:29:38.950-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=GET | uri=/prueba
+2026-10-28T15:29:38.950-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization con esquema Bearer detectado | uri=/prueba
+2026-10-28T15:29:38.950-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : Token JWT extraído correctamente | uri=/prueba
+2026-10-28T15:29:38.951-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.JwtUtils              : JWT token validated successfully
+2026-10-28T15:29:38.951-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : Resultado de validación JWT | valid=true | uri=/prueba
+2026-10-28T15:29:38.951-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.JwtUtils              : Extracting username from JWT token
+2026-10-28T15:29:38.951-03:00  INFO 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : JWT validado correctamente | username=2@hotmail.com | uri=/prueba
+2026-10-28T15:29:38.951-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=2@hotmail.com
+2026-10-28T15:29:38.954-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=2@hotmail.com
+2026-10-28T15:29:38.954-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : Usuario cargado | username=2@hotmail.com | authorities=[ROLE_ADMIN]
+2026-10-28T15:29:38.954-03:00  INFO 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : Autenticación establecida en SecurityContext | username=2@hotmail.com | authorities=[ROLE_ADMIN] | uri=/prueba
+2026-10-28T15:29:38.954-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=GET | uri=/prueba
+2026-10-28T15:29:43.466-03:00 DEBUG 12128 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=GET | uri=/prueba/admin
+2026-10-28T15:29:43.466-03:00 DEBUG 12128 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization con esquema Bearer detectado | uri=/prueba/admin
+2026-10-28T15:29:43.466-03:00 DEBUG 12128 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Token JWT extraído correctamente | uri=/prueba/admin
+2026-10-28T15:29:43.467-03:00 DEBUG 12128 --- [http-nio-8080-exec-2] c.a.p.security.jwt.JwtUtils              : JWT token validated successfully
+2026-10-28T15:29:43.467-03:00 DEBUG 12128 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Resultado de validación JWT | valid=true | uri=/prueba/admin
+2026-10-28T15:29:43.467-03:00 DEBUG 12128 --- [http-nio-8080-exec-2] c.a.p.security.jwt.JwtUtils              : Extracting username from JWT token
+2026-10-28T15:29:43.467-03:00  INFO 12128 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : JWT validado correctamente | username=2@hotmail.com | uri=/prueba/admin
+2026-10-28T15:29:43.467-03:00 DEBUG 12128 --- [http-nio-8080-exec-2] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=2@hotmail.com
+2026-10-28T15:29:43.470-03:00 DEBUG 12128 --- [http-nio-8080-exec-2] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=2@hotmail.com
+2026-10-28T15:29:43.470-03:00 DEBUG 12128 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Usuario cargado | username=2@hotmail.com | authorities=[ROLE_ADMIN]
+2026-10-28T15:29:43.470-03:00  INFO 12128 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Autenticación establecida en SecurityContext | username=2@hotmail.com | authorities=[ROLE_ADMIN] | uri=/prueba/admin
+2026-10-28T15:29:43.470-03:00 DEBUG 12128 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=GET | uri=/prueba/admin
+2026-10-28T15:30:11.658-03:00 DEBUG 12128 --- [http-nio-8080-exec-1] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=GET | uri=/prueba/admin
+2026-10-28T15:30:11.658-03:00 DEBUG 12128 --- [http-nio-8080-exec-1] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/prueba/admin
+2026-10-28T15:30:11.658-03:00 DEBUG 12128 --- [http-nio-8080-exec-1] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=GET | uri=/prueba/admin
+2026-10-28T15:30:11.658-03:00 DEBUG 12128 --- [http-nio-8080-exec-1] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=GET | uri=/prueba/admin
+2026-10-28T15:30:25.833-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/auth/login
+2026-10-28T15:30:25.833-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/auth/login
+2026-10-28T15:30:25.833-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/auth/login
+2026-10-28T15:30:25.833-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/auth/login
+2026-10-28T15:30:25.834-03:00  INFO 12128 --- [http-nio-8080-exec-3] c.a.p.controller.AuthController          : Solicitud de login recibida
+2026-10-28T15:30:25.834-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.service.AuthService                : Authentication attempt started
+2026-10-28T15:30:25.834-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=3@hotmail.com
+2026-10-28T15:30:25.837-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=3@hotmail.com
+2026-10-28T15:30:25.895-03:00  INFO 12128 --- [http-nio-8080-exec-3] c.a.p.service.AuthService                : User authenticated successfully | email=3@hotmail.com
+2026-10-28T15:30:25.896-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.security.jwt.JwtUtils              : Generating JWT token | username=3@hotmail.com
+2026-10-28T15:30:25.896-03:00 DEBUG 12128 --- [http-nio-8080-exec-3] c.a.p.service.AuthService                : JWT generated successfully for authenticated user
+2026-10-28T15:30:25.896-03:00  INFO 12128 --- [http-nio-8080-exec-3] c.a.p.controller.AuthController          : Login procesado correctamente
+2026-10-28T15:30:39.831-03:00 DEBUG 12128 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=GET | uri=/prueba/admin
+2026-10-28T15:30:39.831-03:00 DEBUG 12128 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization con esquema Bearer detectado | uri=/prueba/admin
+2026-10-28T15:30:39.831-03:00 DEBUG 12128 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Token JWT extraído correctamente | uri=/prueba/admin
+2026-10-28T15:30:39.832-03:00 DEBUG 12128 --- [http-nio-8080-exec-4] c.a.p.security.jwt.JwtUtils              : JWT token validated successfully
+2026-10-28T15:30:39.832-03:00 DEBUG 12128 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Resultado de validación JWT | valid=true | uri=/prueba/admin
+2026-10-28T15:30:39.832-03:00 DEBUG 12128 --- [http-nio-8080-exec-4] c.a.p.security.jwt.JwtUtils              : Extracting username from JWT token
+2026-10-28T15:30:39.832-03:00  INFO 12128 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : JWT validado correctamente | username=3@hotmail.com | uri=/prueba/admin
+2026-10-28T15:30:39.832-03:00 DEBUG 12128 --- [http-nio-8080-exec-4] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=3@hotmail.com
+2026-10-28T15:30:39.835-03:00 DEBUG 12128 --- [http-nio-8080-exec-4] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=3@hotmail.com
+2026-10-28T15:30:39.835-03:00 DEBUG 12128 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Usuario cargado | username=3@hotmail.com | authorities=[ROLE_USER]
+2026-10-28T15:30:39.835-03:00  INFO 12128 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Autenticación establecida en SecurityContext | username=3@hotmail.com | authorities=[ROLE_USER] | uri=/prueba/admin
+2026-10-28T15:30:39.835-03:00 DEBUG 12128 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=GET | uri=/prueba/admin
+2026-10-28T15:30:41.747-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=GET | uri=/prueba/admin
+2026-10-28T15:30:41.747-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization con esquema Bearer detectado | uri=/prueba/admin
+2026-10-28T15:30:41.747-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : Token JWT extraído correctamente | uri=/prueba/admin
+2026-10-28T15:30:41.748-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.JwtUtils              : JWT token validated successfully
+2026-10-28T15:30:41.748-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : Resultado de validación JWT | valid=true | uri=/prueba/admin
+2026-10-28T15:30:41.748-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.JwtUtils              : Extracting username from JWT token
+2026-10-28T15:30:41.748-03:00  INFO 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : JWT validado correctamente | username=3@hotmail.com | uri=/prueba/admin
+2026-10-28T15:30:41.748-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=3@hotmail.com
+2026-10-28T15:30:41.751-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=3@hotmail.com
+2026-10-28T15:30:41.751-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : Usuario cargado | username=3@hotmail.com | authorities=[ROLE_USER]
+2026-10-28T15:30:41.751-03:00  INFO 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : Autenticación establecida en SecurityContext | username=3@hotmail.com | authorities=[ROLE_USER] | uri=/prueba/admin
+2026-10-28T15:30:41.751-03:00 DEBUG 12128 --- [http-nio-8080-exec-5] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=GET | uri=/prueba/admin
+2026-10-28T15:30:48.469-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/auth/login
+2026-10-28T15:30:48.470-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/auth/login
+2026-10-28T15:30:48.470-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/auth/login
+2026-10-28T15:30:48.470-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/auth/login
+2026-10-28T15:30:48.471-03:00  INFO 12128 --- [http-nio-8080-exec-6] c.a.p.controller.AuthController          : Solicitud de login recibida
+2026-10-28T15:30:48.471-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.service.AuthService                : Authentication attempt started
+2026-10-28T15:30:48.471-03:00 DEBUG 12128 --- [http-nio-8080-exec-6] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=4@hotmail.com
+2026-10-28T15:30:48.473-03:00  WARN 12128 --- [http-nio-8080-exec-6] c.a.p.s.services.UserDetailsServiceimpl  : Authentication failed | reason=user not found
+2026-10-28T15:30:52.574-03:00 DEBUG 12128 --- [http-nio-8080-exec-7] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/auth/login
+2026-10-28T15:30:52.574-03:00 DEBUG 12128 --- [http-nio-8080-exec-7] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/auth/login
+2026-10-28T15:30:52.574-03:00 DEBUG 12128 --- [http-nio-8080-exec-7] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/auth/login
+2026-10-28T15:30:52.574-03:00 DEBUG 12128 --- [http-nio-8080-exec-7] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/auth/login
+2026-10-28T15:30:52.575-03:00  INFO 12128 --- [http-nio-8080-exec-7] c.a.p.controller.AuthController          : Solicitud de login recibida
+2026-10-28T15:30:52.575-03:00 DEBUG 12128 --- [http-nio-8080-exec-7] c.a.p.service.AuthService                : Authentication attempt started
+2026-10-28T15:30:52.575-03:00 DEBUG 12128 --- [http-nio-8080-exec-7] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=3@hotmail.com
+2026-10-28T15:30:52.578-03:00 DEBUG 12128 --- [http-nio-8080-exec-7] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=3@hotmail.com
+2026-10-28T15:30:52.638-03:00  INFO 12128 --- [http-nio-8080-exec-7] c.a.p.service.AuthService                : User authenticated successfully | email=3@hotmail.com
+2026-10-28T15:30:52.638-03:00 DEBUG 12128 --- [http-nio-8080-exec-7] c.a.p.security.jwt.JwtUtils              : Generating JWT token | username=3@hotmail.com
+2026-10-28T15:30:52.639-03:00 DEBUG 12128 --- [http-nio-8080-exec-7] c.a.p.service.AuthService                : JWT generated successfully for authenticated user
+2026-10-28T15:30:52.639-03:00  INFO 12128 --- [http-nio-8080-exec-7] c.a.p.controller.AuthController          : Login procesado correctamente
+2026-10-28T15:31:00.525-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=GET | uri=/prueba/admin
+2026-10-28T15:31:00.525-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization con esquema Bearer detectado | uri=/prueba/admin
+2026-10-28T15:31:00.526-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.AuthTokenFilter       : Token JWT extraído correctamente | uri=/prueba/admin
+2026-10-28T15:31:00.526-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.JwtUtils              : JWT token validated successfully
+2026-10-28T15:31:00.526-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.AuthTokenFilter       : Resultado de validación JWT | valid=true | uri=/prueba/admin
+2026-10-28T15:31:00.526-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.JwtUtils              : Extracting username from JWT token
+2026-10-28T15:31:00.526-03:00  INFO 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.AuthTokenFilter       : JWT validado correctamente | username=3@hotmail.com | uri=/prueba/admin
+2026-10-28T15:31:00.527-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=3@hotmail.com
+2026-10-28T15:31:00.530-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=3@hotmail.com
+2026-10-28T15:31:00.530-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.AuthTokenFilter       : Usuario cargado | username=3@hotmail.com | authorities=[ROLE_USER]
+2026-10-28T15:31:00.530-03:00  INFO 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.AuthTokenFilter       : Autenticación establecida en SecurityContext | username=3@hotmail.com | authorities=[ROLE_USER] | uri=/prueba/admin
+2026-10-28T15:31:00.530-03:00 DEBUG 12128 --- [http-nio-8080-exec-10] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=GET | uri=/prueba/admin
+2026-10-28T15:31:04.921-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/auth/login
+2026-10-28T15:31:04.921-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/auth/login
+2026-10-28T15:31:04.921-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/auth/login
+2026-10-28T15:31:04.921-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/auth/login
+2026-10-28T15:31:04.922-03:00  INFO 12128 --- [http-nio-8080-exec-9] c.a.p.controller.AuthController          : Solicitud de login recibida
+2026-10-28T15:31:04.922-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.service.AuthService                : Authentication attempt started
+2026-10-28T15:31:04.922-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=2@hotmail.com
+2026-10-28T15:31:04.925-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=2@hotmail.com
+2026-10-28T15:31:04.986-03:00  INFO 12128 --- [http-nio-8080-exec-9] c.a.p.service.AuthService                : User authenticated successfully | email=2@hotmail.com
+2026-10-28T15:31:04.986-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.security.jwt.JwtUtils              : Generating JWT token | username=2@hotmail.com
+2026-10-28T15:31:04.987-03:00 DEBUG 12128 --- [http-nio-8080-exec-9] c.a.p.service.AuthService                : JWT generated successfully for authenticated user
+2026-10-28T15:31:04.987-03:00  INFO 12128 --- [http-nio-8080-exec-9] c.a.p.controller.AuthController          : Login procesado correctamente
+2026-10-28T15:31:13.701-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=GET | uri=/prueba/admin
+2026-10-28T15:31:13.701-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization con esquema Bearer detectado | uri=/prueba/admin
+2026-10-28T15:31:13.701-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : Token JWT extraído correctamente | uri=/prueba/admin
+2026-10-28T15:31:13.702-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.JwtUtils              : JWT token validated successfully
+2026-10-28T15:31:13.702-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : Resultado de validación JWT | valid=true | uri=/prueba/admin
+2026-10-28T15:31:13.702-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.JwtUtils              : Extracting username from JWT token
+2026-10-28T15:31:13.702-03:00  INFO 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : JWT validado correctamente | username=2@hotmail.com | uri=/prueba/admin
+2026-10-28T15:31:13.702-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=2@hotmail.com
+2026-10-28T15:31:13.705-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=2@hotmail.com
+2026-10-28T15:31:13.705-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : Usuario cargado | username=2@hotmail.com | authorities=[ROLE_ADMIN]
+2026-10-28T15:31:13.705-03:00  INFO 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : Autenticación establecida en SecurityContext | username=2@hotmail.com | authorities=[ROLE_ADMIN] | uri=/prueba/admin
+2026-10-28T15:31:13.705-03:00 DEBUG 12128 --- [http-nio-8080-exec-8] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=GET | uri=/prueba/admin
+2026-10-28T15:31:27.290-03:00  INFO 12128 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-28T15:31:27.293-03:00  INFO 12128 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-28T15:31:27.296-03:00  INFO 12128 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28T15:31:27.297-03:00  INFO 12128 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-28T15:31:27.301-03:00  INFO 12128 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-28T15:39:33.689-03:00  INFO 18508 --- [main] c.a.p.ProyectoSecurityApplication        : Starting ProyectoSecurityApplication using Java 26 with PID 18508 (C:\Users\Agus\Desktop\Proyectos\AuthService\target\classes started by Agus in C:\Users\Agus\Desktop\Proyectos\AuthService)
+2026-10-28T15:39:33.693-03:00 DEBUG 18508 --- [main] c.a.p.ProyectoSecurityApplication        : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-10-28T15:39:33.694-03:00  INFO 18508 --- [main] c.a.p.ProyectoSecurityApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-10-28T15:39:34.296-03:00  INFO 18508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-28T15:39:34.345-03:00  INFO 18508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2026-10-28T15:39:34.839-03:00  INFO 18508 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-28T15:39:34.852-03:00  INFO 18508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-28T15:39:34.852-03:00  INFO 18508 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-28T15:39:34.905-03:00  INFO 18508 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1176 ms
+2026-10-28T15:39:34.921-03:00 ERROR 18508 --- [main] t.s.DeferredServletContainerInitializers : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'authTokenFilter': Unsatisfied dependency expressed through field 'jwtUtils': Error creating bean with name 'jwtUtils': Injection of autowired dependencies failed
+2026-10-28T15:39:34.940-03:00  INFO 18508 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-10-28T15:39:34.951-03:00  WARN 18508 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2026-10-28T15:39:34.957-03:00  INFO 18508 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-10-28T15:39:34.970-03:00 ERROR 18508 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:167) ~[spring-boot-web-server-4.1.1.jar:4.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.1.1.jar:4.1.1]
+	at com.agustinperez.proyectoSecurity.ProyectoSecurityApplication.main(ProyectoSecurityApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:150) ~[spring-boot-tomcat-4.1.1.jar:4.1.1]
+	at org.springframework.boot.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:110) ~[spring-boot-tomcat-4.1.1.jar:4.1.1]
+	at org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:429) ~[spring-boot-tomcat-4.1.1.jar:4.1.1]
+	at org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:167) ~[spring-boot-tomcat-4.1.1.jar:4.1.1]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:190) ~[spring-boot-web-server-4.1.1.jar:4.1.1]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164) ~[spring-boot-web-server-4.1.1.jar:4.1.1]
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authTokenFilter': Unsatisfied dependency expressed through field 'jwtUtils': Error creating bean with name 'jwtUtils': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:767) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:748) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:493) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:231) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:185) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:180) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:165) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:97) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.web.context.servlet.WebApplicationContextInitializer.initialize(WebApplicationContextInitializer.java:53) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.tomcat.servlet.DeferredServletContainerInitializers.onStartup(DeferredServletContainerInitializers.java:55) ~[spring-boot-tomcat-4.1.1.jar:4.1.1]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4573) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1204) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1200) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:92) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:149) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:732) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1204) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1200) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:92) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:149) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:732) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:871) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:452) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:131) ~[spring-boot-tomcat-4.1.1.jar:4.1.1]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtUtils': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:499) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1232) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1711) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1658) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:764) ~[spring-beans-7.0.9.jar:7.0.9]
+	... 54 common frames omitted
+Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'JWT_SECRET_KEY' in value "${JWT_SECRET_KEY}" <-- "${app.jwt.secret}"
+	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81) ~[spring-core-7.0.9.jar:7.0.9]
+	at org.springframework.util.PlaceholderParser$ParsedValue.resolve(PlaceholderParser.java:296) ~[spring-core-7.0.9.jar:7.0.9]
+	at org.springframework.util.PlaceholderParser.replacePlaceholders(PlaceholderParser.java:129) ~[spring-core-7.0.9.jar:7.0.9]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:96) ~[spring-core-7.0.9.jar:7.0.9]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:286) ~[spring-core-7.0.9.jar:7.0.9]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:257) ~[spring-core-7.0.9.jar:7.0.9]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:184) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:959) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1679) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1658) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:764) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:748) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:493) ~[spring-beans-7.0.9.jar:7.0.9]
+	... 65 common frames omitted
+
+2026-10-28T15:40:15.181-03:00  INFO 16248 --- [main] c.a.p.ProyectoSecurityApplication        : Starting ProyectoSecurityApplication using Java 26 with PID 16248 (C:\Users\Agus\Desktop\Proyectos\AuthService\target\classes started by Agus in C:\Users\Agus\Desktop\Proyectos\AuthService)
+2026-10-28T15:40:15.183-03:00 DEBUG 16248 --- [main] c.a.p.ProyectoSecurityApplication        : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-10-28T15:40:15.184-03:00  INFO 16248 --- [main] c.a.p.ProyectoSecurityApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-10-28T15:40:15.776-03:00  INFO 16248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-28T15:40:15.832-03:00  INFO 16248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+2026-10-28T15:40:16.364-03:00  INFO 16248 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-28T15:40:16.382-03:00  INFO 16248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-28T15:40:16.382-03:00  INFO 16248 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-28T15:40:16.449-03:00  INFO 16248 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1224 ms
+2026-10-28T15:40:16.635-03:00  INFO 16248 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-28T15:40:16.709-03:00  INFO 16248 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-28T15:40:17.089-03:00  INFO 16248 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-28T15:40:17.114-03:00  INFO 16248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-28T15:40:17.353-03:00  INFO 16248 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c75e3bc
+2026-10-28T15:40:17.355-03:00  INFO 16248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-28T15:40:17.425-03:00  INFO 16248 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/proyectAuth]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.7
+	Default catalog/schema: proyectAuth/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-28T15:40:18.205-03:00  INFO 16248 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-28T15:40:18.269-03:00  INFO 16248 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28T15:40:18.311-03:00  INFO 16248 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-28T15:40:18.476-03:00 DEBUG 16248 --- [main] c.a.p.security.jwt.AuthTokenFilter       : Filter 'authTokenFilter' configured for use
+2026-10-28T15:40:18.507-03:00  INFO 16248 --- [main] c.a.p.security.SecurityConfig            : SecurityConfig initialized
+2026-10-28T15:40:18.515-03:00 DEBUG 16248 --- [main] c.a.p.security.SecurityConfig            : Configuring AuthenticationManager
+2026-10-28T15:40:18.526-03:00 DEBUG 16248 --- [main] c.a.p.security.SecurityConfig            : Initializing BCrypt password encoder
+2026-10-28T15:40:18.534-03:00  INFO 16248 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceimpl
+2026-10-28T15:40:18.537-03:00  INFO 16248 --- [main] c.a.p.service.AuthService                : AuthService initialized
+2026-10-28T15:40:18.558-03:00 DEBUG 16248 --- [main] c.a.p.security.SecurityConfig            : Configuring CORS policy
+2026-10-28T15:40:18.564-03:00  INFO 16248 --- [main] c.a.p.security.SecurityConfig            : CORS configuration registered successfully
+2026-10-28T15:40:18.579-03:00  WARN 16248 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-28T15:40:18.700-03:00  INFO 16248 --- [main] c.a.p.security.SecurityConfig            : Configuring HTTP security filter chain
+2026-10-28T15:40:18.741-03:00  INFO 16248 --- [main] c.a.p.security.SecurityConfig            : HTTP security filter chain configured successfully
+2026-10-28T15:40:19.050-03:00  INFO 16248 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-10-28T15:40:19.055-03:00  INFO 16248 --- [main] c.a.p.ProyectoSecurityApplication        : Started ProyectoSecurityApplication in 4.287 seconds (process running for 4.642)
+2026-10-28T15:40:29.676-03:00  INFO 16248 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-28T15:40:29.677-03:00  INFO 16248 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-28T15:40:29.678-03:00  INFO 16248 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-28T15:40:29.688-03:00 DEBUG 16248 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=GET | uri=/prueba/admin
+2026-10-28T15:40:29.688-03:00 DEBUG 16248 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization con esquema Bearer detectado | uri=/prueba/admin
+2026-10-28T15:40:29.688-03:00 DEBUG 16248 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Token JWT extraído correctamente | uri=/prueba/admin
+2026-10-28T15:40:29.764-03:00 DEBUG 16248 --- [http-nio-8080-exec-2] c.a.p.security.jwt.JwtUtils              : JWT token validated successfully
+2026-10-28T15:40:29.764-03:00 DEBUG 16248 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Resultado de validación JWT | valid=true | uri=/prueba/admin
+2026-10-28T15:40:29.764-03:00 DEBUG 16248 --- [http-nio-8080-exec-2] c.a.p.security.jwt.JwtUtils              : Extracting username from JWT token
+2026-10-28T15:40:29.765-03:00  INFO 16248 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : JWT validado correctamente | username=2@hotmail.com | uri=/prueba/admin
+2026-10-28T15:40:29.765-03:00 DEBUG 16248 --- [http-nio-8080-exec-2] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=2@hotmail.com
+2026-10-28T15:40:29.785-03:00 DEBUG 16248 --- [http-nio-8080-exec-2] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=2@hotmail.com
+2026-10-28T15:40:29.786-03:00 DEBUG 16248 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Usuario cargado | username=2@hotmail.com | authorities=[ROLE_ADMIN]
+2026-10-28T15:40:29.788-03:00  INFO 16248 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Autenticación establecida en SecurityContext | username=2@hotmail.com | authorities=[ROLE_ADMIN] | uri=/prueba/admin
+2026-10-28T15:40:29.788-03:00 DEBUG 16248 --- [http-nio-8080-exec-2] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=GET | uri=/prueba/admin
+2026-10-28T15:40:43.677-03:00 DEBUG 16248 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=POST | uri=/auth/login
+2026-10-28T15:40:43.677-03:00 DEBUG 16248 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization ausente o sin esquema Bearer | uri=/auth/login
+2026-10-28T15:40:43.677-03:00 DEBUG 16248 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : No se encontró un token Bearer | method=POST | uri=/auth/login
+2026-10-28T15:40:43.677-03:00 DEBUG 16248 --- [http-nio-8080-exec-3] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=POST | uri=/auth/login
+2026-10-28T15:40:43.729-03:00  INFO 16248 --- [http-nio-8080-exec-3] c.a.p.controller.AuthController          : Solicitud de login recibida
+2026-10-28T15:40:43.729-03:00 DEBUG 16248 --- [http-nio-8080-exec-3] c.a.p.service.AuthService                : Authentication attempt started
+2026-10-28T15:40:43.795-03:00 DEBUG 16248 --- [http-nio-8080-exec-3] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=3@hotmail.com
+2026-10-28T15:40:43.800-03:00 DEBUG 16248 --- [http-nio-8080-exec-3] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=3@hotmail.com
+2026-10-28T15:40:43.859-03:00  INFO 16248 --- [http-nio-8080-exec-3] c.a.p.service.AuthService                : User authenticated successfully | email=3@hotmail.com
+2026-10-28T15:40:43.859-03:00 DEBUG 16248 --- [http-nio-8080-exec-3] c.a.p.security.jwt.JwtUtils              : Generating JWT token | username=3@hotmail.com
+2026-10-28T15:40:43.890-03:00 DEBUG 16248 --- [http-nio-8080-exec-3] c.a.p.service.AuthService                : JWT generated successfully for authenticated user
+2026-10-28T15:40:43.890-03:00  INFO 16248 --- [http-nio-8080-exec-3] c.a.p.controller.AuthController          : Login procesado correctamente
+2026-10-28T15:40:53.524-03:00 DEBUG 16248 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Iniciando AuthTokenFilter | method=GET | uri=/prueba/admin
+2026-10-28T15:40:53.524-03:00 DEBUG 16248 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Header Authorization con esquema Bearer detectado | uri=/prueba/admin
+2026-10-28T15:40:53.524-03:00 DEBUG 16248 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Token JWT extraído correctamente | uri=/prueba/admin
+2026-10-28T15:40:53.525-03:00 DEBUG 16248 --- [http-nio-8080-exec-4] c.a.p.security.jwt.JwtUtils              : JWT token validated successfully
+2026-10-28T15:40:53.525-03:00 DEBUG 16248 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Resultado de validación JWT | valid=true | uri=/prueba/admin
+2026-10-28T15:40:53.525-03:00 DEBUG 16248 --- [http-nio-8080-exec-4] c.a.p.security.jwt.JwtUtils              : Extracting username from JWT token
+2026-10-28T15:40:53.526-03:00  INFO 16248 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : JWT validado correctamente | username=3@hotmail.com | uri=/prueba/admin
+2026-10-28T15:40:53.526-03:00 DEBUG 16248 --- [http-nio-8080-exec-4] c.a.p.s.services.UserDetailsServiceimpl  : Loading user details for authentication | email=3@hotmail.com
+2026-10-28T15:40:53.529-03:00 DEBUG 16248 --- [http-nio-8080-exec-4] c.a.p.s.services.UserDetailsServiceimpl  : User details loaded successfully | email=3@hotmail.com
+2026-10-28T15:40:53.529-03:00 DEBUG 16248 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Usuario cargado | username=3@hotmail.com | authorities=[ROLE_USER]
+2026-10-28T15:40:53.529-03:00  INFO 16248 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Autenticación establecida en SecurityContext | username=3@hotmail.com | authorities=[ROLE_USER] | uri=/prueba/admin
+2026-10-28T15:40:53.529-03:00 DEBUG 16248 --- [http-nio-8080-exec-4] c.a.p.security.jwt.AuthTokenFilter       : Continuando FilterChain | method=GET | uri=/prueba/admin
+2026-10-28T15:40:59.936-03:00  INFO 16248 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-28T15:40:59.940-03:00  INFO 16248 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-28T15:40:59.943-03:00  INFO 16248 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28T15:40:59.944-03:00  INFO 16248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-28T15:40:59.948-03:00  INFO 16248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
